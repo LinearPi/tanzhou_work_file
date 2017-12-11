@@ -15,7 +15,8 @@ def writeText(textTemp):
         f.write(textTemp)
         f.close()
 
-
+newInstance = itchat.new_instance()
+newInstance.auto_login(hotReload=True, statusStorageDir='newInstance.pkl')
 itchat.auto_login(enableCmdQR=2, hotReload=True)
 
 
@@ -36,8 +37,17 @@ def Gchat(msg):
     print(gres)
 
 
+
+
+@newInstance.msg_register(itchat.content.TEXT)
+def reply(msg):
+    return msg.text
+
+
 if __name__ == "__main__":
     try:
+        
         itchat.run()
+        newInstance.run()
     except KeyboardInterrupt:
         itchat.logout()
