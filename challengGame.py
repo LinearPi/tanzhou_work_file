@@ -110,4 +110,4 @@ def seven():
    pass
 
 if __name__ == '__main__':
-    six()
+    two()
