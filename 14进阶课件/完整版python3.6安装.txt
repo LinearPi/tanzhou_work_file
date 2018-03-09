@@ -1,0 +1,70 @@
+
+如果已经安装好了python34
+sudo yum remove python34
+
+上传下载文件的工具，将压缩包从window上传到Linux上
+sudo yum install lrzsz   #
+rz
+
+
+第一条命令：sudo yum install -y openssl-static
+
+第二条命令：sudo yum install -y gcc wget
+
+第三条命令：sudo yum groupinstall "Development tools"
+
+第四条命令：sudo yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
+
+第五条命令：wget http://python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz
+但是这里下载网速太慢的话等待的时间会很长，所以可以ctrl C 停止下载，然后到windows中将这个压缩包下载好
+在windows上下载完后，使用rz文件传输的工具将将压缩包上传到linux上。如果没有rz命令，则先sudo yum install lrzsz 安装这个文件传输工具。
+
+第六条命令：tar xf 11Python-3.6.1.tar.xz
+
+第七条命令：cd Python-3.6.1
+
+第八条命令： ./configure --prefix=/usr/local/python3
+
+第九条命令：make  
+
+第十条命令：sudo make install
+
+第十一条命令：sudo ln -s /usr/local/python3/bin/python3 /usr/bin/python3
+
+第十二条命令：sudo ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
+
+
+
+
+编译安装
+python官网只为Linux提供了源码，因此我下载?python3.6.1的源码压缩包
+第一步，CentOS装好openssl静态库
+键入以下命令：	yum install -y openssl-static
+	若未装该静态库会导致python3自带的pip3安装失败
+第二步，编译python3源码
+0. CentOS安装GCC和wget	yum install -y gcc wget
+	yum groupinstall "Development tools"
+	yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
+1. 先解压python3的源码包	wget http://python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz
+	tar xf Python-3.6.1.tar.xz
+2. 配置安装路径	cd Python-3.6.1      //
+进入python3源码解压后的文件夹 ./configure --prefix=/usr/local/python3  //默认配置文件并设置安装路径
+3.编译安装 ： make & make install
+	最终若无错误提示，说明安装成功
+5. 添加文件链接	安装后键入命令?python3?提示不存在该命令，这是因为我们自定义了安装目录，因此需要添加文件链接，命令如下：
+	ln -s /usr/local/python3/bin/python3 /usr/bin/python3
+6. 测试	键入命令：
+	python3 -V
+	会输出python3版本信息，说明python3安装完成
+
+
+
+源码包安装python3已经自带安装好了pip,下面的步骤不需要了
+安装pip
+wget https://bootstrap.pypa.io/get-pip.py
+可以先在windows上下载好get-pip.py这个文件， 使用rz将这个文件传输到linux上
+
+python get-pip.py
+
+
+

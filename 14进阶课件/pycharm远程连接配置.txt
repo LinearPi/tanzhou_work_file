@@ -1,0 +1,60 @@
+pycharm 连接 linux上面的python
+
+Tools >> Deployment >> Configuration  
+
+新建连接  
+名字 + SFTP
+
+输入IP 地址 端口  
+选择测试Test SFTP connection，输入用户名及密码
+
+在Mappings中
+填入本地项目地址
+填入linux上的项目地址
+
+选择ok 
+
+
+
+linux 上启动服务 runserver
+
+修改项目中的settings文件
+ALLOWED_HOSTS = ['*']   # *都可以连接
+
+在linux上输入启动命令
+python3 manage.py runserver 0.0.0.0:8000
+
+
+选择Tools >> Deployment >> Automatic Upload(always)
+使得我们的项目每次都能同步更新。
+
+
+
+
+
+
+Ubuntu上安装Anaconda 	Ubuntu16.04 32bit	Anaconda 32bit
+在用户下直接运行	bash Anaconda3-4.4.0-Linux-x86.sh	
+先是提示看说明	回车	
+看完之后输入yes	yes	
+这里输入路径	/home/pyvip/.anaconda	Anaconda会安装在当前用户下，
+加点会隐藏起来，减少误删的可能性
+最后输入是否添加环境变量	yes	如果今后有问题直接删掉就可
+重启即可	Reboot	
+安装虚拟环境	conda create -n py36env python=3.6	
+使用虚拟环境	source activate py36env	
+退出虚拟环境	source deactivate py36env	
+虚拟环境不会使用anaconda的包	
+export PYTHONPATH="/home/pyvip/.anaconda3/pkgs:$PYTHONPATH" 
+在  .bashrc 中添加这个边来给你之后就可以使用anaconda的所有的模块
+
+
+
+
+
+
+
+
+
+
+

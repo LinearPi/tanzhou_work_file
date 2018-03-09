@@ -1,0 +1,67 @@
+windows cmd ping ip地址看是否能ping 通
+telnet ip 端口 是否能连上相应的端口
+
+查看防火墙状态
+service iptables status
+
+编辑/etc/sysconfig/iptables 文件 打开3306端口
+加上这句
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT
+
+重启iptables
+
+service iptables restart
+
+
+查看状态
+service iptables status
+
+到cmd中输入mysql -hxxxxx -P3306 -utk -p
+
+
+
+
+
+
+ubuntu 上的mysql远程连接
+
+netstat -an | grep 3306
+
+看到结果 127.0.0.1:3306
+这表示端口没有对外开放。
+
+修改配置文件
+sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf 
+
+将配置文件中的
+bind-addres = 127.0.0.1
+修改成：
+bind-addres = 0.0.0.0
+
+修改后保存退出。
+
+重启mysql服务：
+sudo service mysql restart
+
+
+win上面cmd远程连接 
+
+mysql -h127.0.0.1 -P2222 -udevelop -pQWEqwe123
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
