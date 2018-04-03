@@ -1,0 +1,166 @@
+
+html,body{height: 100%}
+.live-chat{width: 332px;min-height: 100%;border: 1px solid #E4E5E8;background-color: #fff;margin: 0 auto;position: relative}
+
+/*nav*/
+.liveChat-nav{width:332px;height:40px;}
+.liveChat-nav a{position:relative; display: inline-block;color: #1F2328;width:33.33333%;height: 40px;line-height:40px;border-right: 1px solid #E4E5E8;border-bottom:1px solid #E4E5E8;float: left;text-align: center}
+.liveChat-nav a:last-child{border-right:none}
+.liveChat-nav a.active {  color: #3073F4;  border-bottom-color: #3073F4;  border-bottom-width: 2px;  }
+.liveChat-nav>span{display: block;height: 40px;line-height:40px;border-bottom:1px solid #E4E5E8;text-align: center}
+.liveChat-nav a i.pob{position: absolute;top: 4px;left: 70px}
+.liveChat-nav a i , .message-main .message-list li .date i{display: block;width: 16px;height: 16px;border-radius: 50%;font-size: 12px;background: #ff433e;color: #FFFFFF;line-height: 16px;text-align: center}
+.liveChat-nav a i.active, .message-main .message-list li .date i.active{border-radius: 36px;width:26px;}
+.liveChat-nav a i.active1, .message-main .message-list li .date i.active1{width:29px;border-radius: 36px;}
+/*互动聊天*/
+.interactive-chat{width: 100%;background-color: #FBF9F9;position: absolute;top:40px;bottom:0px;padding:0;height: auto;}
+.padding-div{margin:25px 20px}
+.duccess-chat{position: absolute;top: 0;bottom: 132px;height: auto;width: 100%;margin: 0;padding: 25px 20px;overflow-y: auto;}
+.interactive-chat p{color:#55595C;margin-bottom: 20px;word-break: break-word;word-wrap: normal;white-space: normal;line-height:22px;width: 100%;display: inline-block}
+.interactive-chat p span{color:#3073F4;}
+.interactive-chat p.mychat-p{color: #F57575}
+.interactive-chat p.mychat-p span{color: #F57575}
+.interactive-chat p.flowers{color: #fa8f65}
+.interactive-chat p.flowers i{display: inline-block;width: 30px;height:20px;background: url("../images/icon.png") -54px -346px no-repeat;margin-left: 5px;vertical-align: middle}
+.interactive-chat p.chat-join{color:#a1a1a3}
+.interactive-chat p em{float: left;}
+.interactive-chat p.supervision-join{background: #f4e2fe;height: 30px;line-height: 30px;width: auto;padding: 0 15px;border-radius: 20px}
+.interactive-chat p.supervision-join span{color: #9465e7;max-width: 102px;float: left;margin: 0 5px;width: auto;}
+.interactive-chat p.supervision-join i{display: block;float: left}
+
+/*底部输入框*/
+.interactiveChat-down{width: 330px;height: 132px;position: absolute;left:0;bottom: 0;background-color: #fff;border-top: 1px solid #E4E5E8;}
+.interactiveChat-down ul{padding-left: 5px}
+.interactiveChat-down ul li{float: left;width:45px;height:30px;background:url("../images/icon.png") 0 0 no-repeat;cursor: pointer}
+.interactiveChat-down ul li.liveChat-li1{background-position:-90px -207px}
+.interactiveChat-down ul li.liveChat-li2{background-position:-135px -207px}
+.interactiveChat-down ul li.liveChat-li3{background-position:-180px -206px}
+.interactiveChat-down ul li.liveChat-li4{background-position:-225px -207px}
+.interactiveChat-down ul li.liveChat-li5{background-position:-270px -207px}
+.interactiveChat-down ul li.liveChat-li6{background-position:-315px -207px}
+
+.interactiveChat-down ul li.liveChat-li1:hover{background-position:-90px -249px}
+.interactiveChat-down ul li.liveChat-li2:hover{background-position:-135px -249px}
+.interactiveChat-down ul li.liveChat-li3:hover{background-position:-180px -248px}
+.interactiveChat-down ul li.liveChat-li4:hover{background-position:-225px -249px}
+.interactiveChat-down ul li.liveChat-li5:hover{background-position:-270px -249px}
+.interactiveChat-down ul li.liveChat-li6:hover{background-position:-315px -249px}
+.interactiveChat-down .chat-input{width: 308px;margin:10px auto 0;border-radius: 5px}
+.interactiveChat-down .chat-input textarea{display: inline-block;width: 100%;height: 56px;overflow-y: auto;outline: none;float: left;padding:0 10px;resize:none;border: none}
+.interactiveChat-down .chat-input button{width: 66px;height:26px;background: #E2E3E6;border-radius:5px;margin-top: 5px}
+.interactiveChat-down .chat-input button.active{background: #3073F4;color: #FFFFFF}
+/*在线*/
+.on-live{width: 100%;background-color: #fff;position: absolute;top:40px;bottom:0;overflow-y: auto;}
+.on-live ul li{float: left;height: 42px;width: 100%;padding: 0 20px;line-height: 42px;border-bottom: 1px solid #E4E5E8;position: relative}
+.on-live ul li.active{background-color: #E7E7E7}
+.on-live ul li span,.person-chat .name span{display:block;width: 38px;height: 18px;color: #fff;border-radius: 5px;line-height: 18px;text-align: center;float: left;margin-top: 12px;margin-right:8px;font-size: 12px}
+.on-live ul li span.live-teacher,.person-chat .name span.live-teacher{background: -webkit-linear-gradient(left,#FFD375,#F4731D);background: -o-linear-gradient(right,#FFD375,#F4731D);background: -moz-linear-gradient(right,#FFD375,#F4731D);background: linear-gradient(to right,#FFD375,#F4731D);filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr =#FFD375, endColorstr =#F4731D)}
+.on-live ul li span.live-tutor,.person-chat .name span.live-tutor{background: -webkit-linear-gradient(left,#60F1A1,#36B96E);background: -o-linear-gradient(right,#60F1A1,#36B96E);background: -moz-linear-gradient(right,#60F1A1,#36B96E);background: linear-gradient(to right,#60F1A1,#36B96E);filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr =#60F1A1, endColorstr =#36B96E)}
+.on-live ul li span.live-student,.person-chat .name span.live-student{background: -webkit-linear-gradient(left,#3A7BFF,#5DBBF7);background: -o-linear-gradient(right,#3A7BFF,#5DBBF7);background: -moz-linear-gradient(right,#3A7BFF,#5DBBF7);background: linear-gradient(to right,#3A7BFF,#5DBBF7);filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr =#3A7BFF, endColorstr =#5DBBF7); /** IE8 **/}
+.on-live ul li span.live-supervision{width: 60px; background: -webkit-linear-gradient(left,#865ee2,#d386ff);background: -o-linear-gradient(right,#865ee2,#d386ff);background: -moz-linear-gradient(right,#865ee2,#d386ff);background: linear-gradient(to right,#865ee2,#d386ff);filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr =#865ee2, endColorstr =#d386ff); /** IE8 **/}
+.on-live ul li .teacher-i{display: inline-block;width:40px;height:30px;background: url("../images/icon.png") -90px -290px no-repeat}
+.on-live ul li .student-i{display: inline-block;width:20px;height:30px;background: url("../images/icon.png") -148px -290px no-repeat}
+.on-live ul li p,.person-chat .name p{max-width: 180px;display: inline-block;  width:auto;float: left; position: relative;padding-right: 11px}
+.on-live ul li s{display: block;position: absolute;right: 10px;width: 22px;height: 20px;background-position: -336px -20px;top: 13px;cursor: pointer;display: none}
+.on-live ul li s:hover{background-position: -296px -20px;}
+.on-live ul li:hover s{display: block}
+.on-live ul li .list{position: absolute;  top: 10px;  right: 25px;  z-index: 10;  box-shadow: 0 0 10px #cccccc;  font-size: 12px;}
+.on-live ul li .list a{display: block;  padding:0 16px;text-align: center; height: 30px;  line-height: 30px;  background: #FFFFFF;  transition: all .3s;}
+.on-live ul li .list a:hover{ background: #35a5f4;color: #FFFFFF}
+
+.on-live ul li p{max-width: 180px;display: inline-block;  width:auto;float: left; position: relative;padding-right: 6px}
+.on-live ul li p b{display: inline-block;background: url("../images/jin2.png") no-repeat;width: 14px;height: 14px;vertical-align: middle; margin: -2px 0 0 5px;}
+
+/*目录*/
+.catalog,.message-main{width: 100%;background-color: #fff;position: absolute;top:40px;bottom:0;left: 0;overflow-y: auto;}
+.catalog>ul li{float: left;width: 100%;padding: 0 20px;line-height: 40px;border-bottom: 1px solid #E4E5E8;color: #1f2328;position: relative}
+.catalog>ul li.active{background-color: #E7E7E7}
+.catalog>ul li>i{display: inline-block;width: 58px;height: 20px;color:#fff;border-radius:10px;background-color:#B5B9BF;line-height: 20px;text-align: center;font-size: 12px;position: absolute;  top: 10px;  right: 30px;}
+.catalog>ul li p{width:204px;display: inline-block;float: left;margin-right: 10px}
+.catalog>ul li>em{display: inline-block;width: 20px;height: 12px;float: right;margin-right:6px;margin-top: 15px;background: url("../images/icon.png") -143px -345px no-repeat;transform: rotate(90deg);cursor: pointer}
+.catalog>ul li.active1>em{transform: rotateX(-180deg)}
+.catalog>ul li .playback-video{width:332px;margin-left: -20px;background-color:#FBF9F9;border-top:1px solid #E4E5E8;margin-top: 40px;color: #55595C}
+.catalog>ul li .playback-video>div{border-top: 1px solid #E4E5E8}
+.catalog>ul li .playback-video>div:first-child{border-top:none}
+.catalog>ul li .playback-video p{/* width:212px; */width: auto;max-width: 100%;padding-left: 15px}
+.catalog>ul li .playback-video p>em{display: inline-block;float: left;width:20px;height:30px;background: url("../images/icon.png") -102px -330px no-repeat}
+.catalog>ul li .playback-video i{display: inline-block;float:right;margin-right: 25px}
+
+/*消息部分*/
+.message-main .message-list li{height: 68px;padding: 10px 20px;cursor: pointer}
+.message-main .message-list li .person{width: 48px;height: 48px;border-radius: 50%;overflow: hidden;margin-right: 12px}
+.message-main .message-list li .text{width: 162px;line-height: 24px}
+.message-main .message-list li .text span img{width: 12px;height: 12px;margin-right:6px;vertical-align: middle}
+.message-main .message-list li .text span ,.message-main .message-list li .date span{color: #a1a1a3;font-size: 12px;}
+.message-main .message-list li .date{text-align: right;width: 55px;line-height: 24px}
+.message-main .message-list li .date i{margin-top: 3px}
+.message-main .message-list li:hover{background: #e8e9e9}
+
+/*私聊部分*/
+.person-chat{width: 100%;background-color: #fff;position: absolute;top:40px;bottom:0;left: 0;z-index: 100}
+.person-chat .name{position: absolute;height: 48px;line-height: 48px; width: 100%;border-bottom:1px solid #eeeeee;top: 0;left: 0;background: #f8f8f8;padding: 0 20px}
+.person-chat .name span{margin-top: 15px}
+.person-chat .chat-main{position: absolute;width: 100%;top:48px;bottom: 132px;height: auto;background: #f8f8f8;padding:0 20px 10px 20px;overflow-x: hidden;overflow-y: auto}
+.person-chat .name i{display: block; width: 36px;height: 34px;background-position:-172px -337px;cursor: pointer;margin-top: 7px}
+.chat-left .chat-pic{ display: block;margin-right: 10px;float:left;}
+.chat-left,.chat-right{padding: 20px 0 0 0;}
+.chat-main .date{text-align: center;font-size: 12px;color: #a1a1a3;margin-top: 20px;}
+.chat-text{padding:8px 12px;border-radius: 5px;-webkit-border-radius: 5px;position: relative;max-width: 204px;word-break:break-word;word-wrap:break-word;word-spacing: normal}
+.chat-text span{display:block}
+.chat-text img{width: auto;height: auto;max-width: 146px;max-height: 400px;}
+.chat-left .chat-text{background:#d7eafa;float:left}
+.chat-right .chat-text{background:#ffffff;border: 1px solid #EDEDED;float:right}
+.chat-right .chat-pic{margin-left: 10px;float:right;}
+.chat-text i{display: block;width:10px;height: 10px;position: absolute;background:url("../images/chat-l.png")no-repeat;}
+.chat-left .chat-text i{ top: 10px;  left: -9px;}
+.chat-right .chat-text i{  background:url("../images/chat-r.png")no-repeat;  top: 10px;  right: -9px;  }
+.chat-right .chat-img{float:right;}
+.chat-left .chat-img{float:left;}
+.chat-left .chat-pic img, .chat-right .chat-pic img{  width: 30px;  height: 30px;  border-radius: 50%;  }
+.chat-main .chat-img{max-width: 170px;max-height: 170px;border-radius: 5px;overflow: hidden;position: relative}
+.chat-main .chat-img .bg{position: absolute;width: 100%;height: 100%;top: 0;left: 0;background: rgba(0,0,0,.8);text-align: center}
+.chat-main .chat-img .bg img{position: absolute;width: 26px;height: 26px;top: 50%;left: 50%;margin-top: -13px;margin-left: -13px;}
+.chat-text s{display: block;width:12px;height: 12px;position: absolute;background:url("../images/jinshi.png")no-repeat;top:12px;left: -22px;}
+.chat-text s.send{width:26px;height: 26px;background:url("../images/send.gif")no-repeat;top:5px;left: -30px;}
+
+
+/*录播    nav*/
+.recorded-nav a{width: 100%}
+.small-module{width: 300px;height: 30px;border: 1px solid #E4E5E8;background-color: #FBF9F9;line-height:20px;padding-top: 5px;margin: 10px auto 0}
+.small-module a{display: inline-block;width: 50%;font-size: 12px;color:#55595C;float:left;text-align: center}
+.small-module a:first-child{border-right: 1px solid #E4E5E8}
+.small-module a.active{color:#0E6EFF}
+.afterSchool-discussion{width: 100%;position: absolute;top:50px;bottom:124px;overflow-y: auto;padding-bottom:10px}
+.big-discussion{width: 332px;min-height: 388px;overflow-y: auto}
+.discussion{border: 1px solid #E4E5E8;background-color: #FBF9F9;width: 300px;padding: 10px;margin: 0 auto 8px}
+.discussion .header-img{width:30px;float: left;margin-right: 10px}
+.discussion .header-img img{width: 30px;height: 30px;border-radius: 50%}
+.discussion .discussion-ct{width:300px;font-size: 12px;padding-left: 30px;margin-bottom: 8px}
+.discussion .discussion-ct p{color:#55595C;padding-right: 20px;padding-left: 10px;margin-bottom:8px}
+.discussion .discussion-ct p span{color: #0E6EFF}
+.discussion .discussion-ct ul li{float: left}
+.discussion .discussion-ct ul li.discussion-li1{color: #a1a1a3;padding :0 60px 0 10px}
+.discussion .discussion-ct ul li.discussion-li2 a{color:#55595C;padding:0 10px;border-right: 1px solid #e4e5e8}
+.discussion .discussion-ct ul li.discussion-li3{color:#55595C;padding-left:24px;background: url("../images/icon.png") -179px -303px no-repeat}
+.discussion .discussion-ct ul li.discussion-li3:hover{background-position:-206px -303px }
+.discussion .discussion-ct ul li.discussion-li3.active{background-position:-242.5px -303px }
+.discussion .reply{width: 248px;background-color:#F3F3F3;margin-left:40px;padding:8px 0 8px 0;border-bottom: 1px solid #E4E5E8;margin-bottom: 0}
+.discussion .reply ul li.discussion-li1{color: #a1a1a3;padding :0 50px 0 10px}
+.discussion .reply p{padding-right:10px}
+.discussion .reply-p{width: 248px;margin-left:40px;background-color:#F3F3F3;padding:5px 0 2px 0;}
+.discussion .reply ul li.discussion-li4 a{color:#55595C;visibility: hidden}
+.discussion .discussion-ct ul li.discussion-li5 a:hover{color:#0E6EFF;}
+.discussion .reply:hover .discussion-li4 a{visibility: visible}
+.discussion .reply .discussion-li4 a:hover{color:#0E6EFF;}
+.afterSchool-discussion,.catalog,.interactive-chat,.on-live,.message-main{overflow-x: hidden}
+.web-right .duccess{position: absolute;  top: 40px;  bottom: 0;  width: 100%;}
+
+.sg-emoji {padding: 5px 0 5px 2px;overflow: hidden;position: absolute;left: 0;bottom: 100%;;background: #fff;border: 1px solid #ddd;border-width: 1px 0;}
+.sg-emoji span {width: 25px;height: 25px;display: inline-block;}
+.sg-emoji span:hover {background: #ddd;}
+.sg-emoji span img {width: 100%}
+.interactiveChat-down ul li label {width: 100%;height: 100%;display: inline-block;}
+.interactive-chat p img{width: auto;height: auto;max-width: 100%;max-height: 400px;}
+.chat-emoji{width: 25px!important;height: 25px!important;vertical-align: top!important;}
+.interactive-chat p .chat-list-link {color: #0072C4;text-decoration: underline;}
+#closeLoginDiv{display:none}

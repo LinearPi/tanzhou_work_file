@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.shiguangkey.com/teacherAdmin/main.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Mar 2018 08:17:28 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <title>老师后台管理</title>
+    <link rel="stylesheet" href="../res/css/teacherAdmin/public.css" />
+    <link href="../res/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <style type="text/css">
+        #sougou_bottom {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body ms-controller="main" class="ms-controller">
+    <!--header 开始-->
+    <div class="header-bg">
+        <div class="w1195">
+            <h1 class="courlogo fl">
+                <a href="../index.html" target="_blank"><img src="../res/images/pag-logo.png" alt="首页" /></a>
+            </h1>
+            <div class="fl cour-nav">
+                <ul>
+                    <li><a href="../index.html" target="_blank">首页</a></li>
+                    <li><a href="../course/list.html" target="_blank">全部课程</a></li>
+                    <!--<li><a href="//bbs.tanzhouedu.com/" target="_blank">社区</a></li>-->
+                    <li><a href="../help/downloadApp.html" target="_blank">客户端</a></li>
+                </ul>
+            </div>
+            <div class="search fl w290">
+                <div class="seainput w252">
+                    <i class="icon searchimg fr cour-search" ms-click="@search" maxlength="15"></i>
+                    <input type="text" placeholder="请输入关键词" id="keywords" class="inputtext w203" ms-duplex="keywords" ms-keyup="@search | enter" />
+                </div>
+            </div>
+            <!--登录 - 开始-->
+            <div class="login fr courlogin">
+                <!--已登录展示效果 - 开始-->
+                <div class="thelogin">
+                    <div class="personal fr">
+                        <a href="../studentAdmin/main.html#myCourse" target="_blank" class="perimg"><img ms-attr="{src:userIcon}"></a>
+                        <div class="peohover">
+                            <i class="icon pericon"></i>
+                            <ul class="perul">
+                                <li><a href="../studentAdmin/main.html#myCourse" target="_blank">课表</a></li>
+                                <li><a href="../studentAdmin/main.html#order" target="_blank">我的订单</a></li>
+                                <li><a href="../studentAdmin/main.html#collection" target="_blank">收藏</a></li>
+                                <li><a href="../studentAdmin/main.html#contact" target="_blank">个人信息</a></li>
+                                <li><a href="../studentAdmin/main.html#studentMail" target="_blank">站内信</a></li>
+                                <li><a href="../studentAdmin/main.html#myCoupon" target="_blank">优惠券</a></li>
+                                <li><a href="javascript:void(0);" ms-click="logout()">退出</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--<a href="javascript:void(0);" class="fr username colorfff">{{user.user.account}}</a>-->
+                    <div class="loginbut fr">
+                        <div class="fr teacher cour-color none" id="isTeacher">
+                            <a href="main.html#liveClass" target="_blank">我是老师</a>
+                            <div class="peohover">
+                                <i class="icon pericon"></i>
+                                <ul class="perul">
+                                    <li><a href="main.html#liveClass" target="_blank">直播课程</a></li>
+                                    <li><a href="main.html#myInfo" target="_blank">资料修改</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fr headmaster cour-color none" id="isSchool">
+                            <a href="../schoolAdmin/main.html#information" target="_blank">我是校长</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- banner - 开始-->
+    <div class="banner">
+        <div class="class-banner" ms-visible="school.logo">
+            <div class="banner-one fl">
+                <a ms-attr="{href:'/school/'+@school.id}" target="_blank">
+                    <img ms-attr="{src: @world.ossHome+ @school.logo+'!mall_school_a'}" width="140px">
+                </a>
+            </div>
+            <div class="banner-two fl">
+                <h1>
+                    <b>{{teacher.name}}</b>
+                    <div class="banner-three fl" style="width: 120px;">
+                        <!--	<img ms-attr="{src:@world.ossHome+@teacher.headIcon}">-->
+                        <img ms-visible="teacher.tutor==0&&teacher.teacher!=0 " src="../res/images/banner-zhujiao.png">
+                        <img ms-visible="teacher.teacher==0" src="../res/images/banner-laoshi.png">
+                        <span ms-visible="teacher.teacher==0">老师</span>
+                        <span ms-visible="teacher.tutor==0 && teacher.teacher==0 ">、</span>
+                        <span ms-visible="teacher.tutor==0">助教</span>
+                        <input type="hidden" id="tutor" ms-duplex="tutor" value="-1" />
+                    </div>
+                    <div class="clear"></div>
+                </h1>
+                <!--<h4>所属学校：{{school.name}}</h4>-->
+                <!--<h4>学生数量：{{teacher.studentNum}}</h4>
+					<h4>课程数量：{{teacher.courseNum}}</h4>-->
+                <h4>今日直播：{{teacher.toDayLiveNum}} 场</h4>
+                <h4>明日直播：{{teacher.toMorrowLiveNum}} 场</h4>
+                <h4>在架课程：{{teacher.putawayCourseNum}} 个</h4>
+            </div>
+            <!--<div class="banner-four fr">
+					<img src="/res/images/houtai-dow.png" class="img-dowload">
+					<h1>下载老师客户端</h1>
+					<img src="/res/images/icon-sjx.png" class="banner-fourPic1">
+					<img src="/res/images/icon-sjs.png" class="banner-fourPic2">
+					<ul class="banner-fourUl">
+						<li>
+							<a>下载XP版</a>
+						</li>
+						
+						<li ms-if="windowsDownloadUrl !=''">
+							<a ms-attr="{href:windowsDownloadUrl}">下载windows版</a>							
+						</li>
+						<li ms-if="macDownloadUrl !=''">
+							<a ms-attr="{href:macDownloadUrl}">下载mac版</a>
+						</li>
+					</ul>
+				</div>-->
+        </div>
+    </div>
+    <!-- banner - 结束-->
+    <div class="nav">
+        <div class="nav-left fl">
+            <ul>
+                <li ms-class="@menu=='liveClass' ?'backblue':''">
+                    <a href="main.html#liveClass" ms-click="ifreamChange('liveClass')" ms-class="@menu=='liveClass' ?'fontfff':''">
+                        <!--<img src="/res/images/live-class-b.png" ms-class="@menu=='liveClass' ?'nav-left-pic-1 none':'nav-left-pic-1'">
+                        <img src="/res/images/live-class-w.png" ms-class="@menu=='liveClass' ?'nav-left-pic-2 block':'nav-left-pic-2'">-->
+                        <span>直播课程</span>
+                    </a>
+                </li>
+                <li ms-if="toturShow" ms-class="@menu=='classAuditing' ?'backblue':''">
+                    <a href="main.html#classAuditing" ms-click="ifreamChange('classAuditing')" ms-class="@menu=='classAuditing' ?'fontfff':''">
+                        <!--<img src="/res/images/class-box-b.png" ms-class="@menu=='classAuditing' ?'nav-left-pic-1 none':'nav-left-pic-1'">
+                        <img src="/res/images/class-box-w.png" ms-class="@menu=='classAuditing' ?'nav-left-pic-2 block':'nav-left-pic-2'">-->
+                        <span>课程审核</span>
+                    </a>
+                </li>
+                <li ms-class="@menu=='order' ?'backblue':''">
+                    <a href="main.html#order" ms-click="ifreamChange('order')" ms-class="@menu=='order' ?'fontfff':''">
+                        <!--<img src="/res/images/order-form-b.png" ms-class="@menu=='order' ?'nav-left-pic-1 none':'nav-left-pic-1'">
+                        <img src="/res/images/order-form-w.png" ms-class="@menu=='order' ?'nav-left-pic-2 block':'nav-left-pic-2'">-->
+                        <span>订单管理</span>
+                    </a>
+                </li>
+                <li ms-class="@menu=='myInfo' ?'backblue':''">
+                    <a href="main.html#myInfo" ms-click="ifreamChange('myInfo')" ms-class="@menu=='myInfo' ?'fontfff':''">
+                        <!-- <img src="/res/images/person-data-b.png" ms-class="@menu=='myInfo' ?'nav-left-pic-1 none':'nav-left-pic-1'">
+                        <img src="/res/images/person-data-w.png" ms-class="@menu=='myInfo' ?'nav-left-pic-2 block':'nav-left-pic-2'">-->
+                        <span>个人资料</span>
+                    </a>
+                </li>
+                <li ms-class="@menu=='stuManage' ?'backblue':''">
+                    <a href="main.html#stuManage" ms-click="ifreamChange('stuManage')" ms-class="@menu=='stuManage' ?'fontfff':''">
+                        <!--<img src="/res/images/xs-manage-b.png" ms-class="@menu=='stuManage' ?'nav-left-pic-1 none':'nav-left-pic-1'">
+                        <img src="/res/images/xs-manage-w.png" ms-class="@menu=='stuManage' ?'nav-left-pic-2 block':'nav-left-pic-2'">-->
+                        <span>学生管理</span>
+                    </a>
+                </li>
+                <li ms-class="@menu=='teacherMail' ?'backblue':''">
+                    <a href="main.html#teacherMail" ms-click="ifreamChange('teacherMail')" ms-class="@menu=='teacherMail' ?'fontfff':''">
+                        <!--<img src="/res/images/xin-hei.png" ms-class="@menu=='teacherMail' ?'nav-left-pic-1 none':'nav-left-pic-1'">
+                        <img src="/res/images/xin-bai.png" ms-class="@menu=='teacherMail' ?'nav-left-pic-2 block':'nav-left-pic-2'">-->
+                        <span>站内信</span>
+                    </a>
+                </li>
+
+
+                <!--<li ms-class="@menu=='question-list' ?'backblue':''">
+                    <a href="main.html#question-list" ms-click="ifreamChange('question-list')" ms-class="@menu=='question-list' ?'fontfff':''">
+                        <span>题库管理</span>
+                    </a>
+                </li>
+                <li ms-class="@menu=='paper-list' ?'backblue':''">
+                    <a href="main.html#paper-list" ms-click="ifreamChange('paper-list')" ms-class="@menu=='paper-list' ?'fontfff':''">
+                        <span>试卷管理</span>
+                    </a>
+                </li>
+                <li ms-class="@menu=='paper-manager' ?'backblue':''">
+                    <a href="main.html#paper-manager" ms-click="ifreamChange('paper-manager')" ms-class="@menu=='paper-manager' ?'fontfff':''">
+                        <span>考试管理</span>
+                    </a>
+                </li>
+                <li ms-class="@menu=='drafts' ?'backblue':''">
+                    <a href="main.html#drafts" ms-click="ifreamChange('drafts')" ms-class="@menu=='drafts' ?'fontfff':''">
+                        <span>草稿箱</span>
+                    </a>
+                </li>
+                <li ms-class="@menu=='tags' ?'backblue':''">
+                    <a href="main.html#tags" ms-click="ifreamChange('tags')" ms-class="@menu=='tags' ?'fontfff':''">
+                        <span>标签管理</span>
+                    </a>
+                </li>-->
+                <li>
+                    <a href="#" ms-click="toCrm()">
+                        <!--<img src="/res/images/stu-manage-b.png" class="nav-left-pic-1">
+                        <img src="/res/images/stu-manage-w.png" class="nav-left-pic-2">-->
+                        <span>CRM系统</span>
+                    </a>
+                </li>
+                <li ms-class="@menu=='couponPromotion' ?'backblue':''">
+                    <a href="main.html#couponPromotion" ms-click="ifreamChange('couponPromotion')" ms-class="@menu=='couponPromotion' ?'fontfff':''">
+                        <!--<img src="/res/images/youhuij1.png" ms-class="@menu=='couponPromotion' ?'nav-left-pic-1 none':'nav-left-pic-1'">
+                        <img src="/res/images/youhuij.png" ms-class="@menu=='couponPromotion' ?'nav-left-pic-1 block':'nav-left-pic-2'">-->
+                        <span>优惠券推广</span>
+                    </a>
+                </li>
+                <li ms-if="toturShow" ms-class="@menu=='managerCombo' ?'backblue':''">
+                    <a href="main.html#managerCombo" ms-click="ifreamChange('managerCombo')" ms-class="@menu=='managerCombo' ?'fontfff':''">
+                        <!--<img src="/res/images/taocan1.png" ms-class="@menu=='managerCombo' ?'nav-left-pic-1 none':'nav-left-pic-1'">
+                        <img src="/res/images/taocan.png" ms-class="@menu=='managerCombo' ?'nav-left-pic-1 block':'nav-left-pic-2'">-->
+                        <span>套餐管理</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <iframe id="iframepage" src="default.html" name="iframepage" frameBorder=0 onLoad="iFrameHeight()" style="width: 985px;float: left;" scrolling="no"></iframe>
+        <div class="clear"></div>
+    </div>
+    <iframe src="../schoolAdmin/foot.html" frameBorder=0 width="100%" style="height: 180px;min-width: 1200px;" scrolling="no"></iframe>
+
+    <script type="text/javascript" language="javascript">
+        function iFrameHeight() {
+            var iframe = document.getElementById("iframepage");
+            var subWeb = document.frames ? document.frames["iframepage"].document : iframe.contentDocument;
+            iframe.style.visibility = 'visible';
+            iframe.style.height = subWeb.documentElement.offsetHeight + "px";
+            iframe.contentDocument && iframe.contentDocument.$ && iframe.contentWindow.$(iframe.contentDocument).on({
+                ajaxComplete: function() {
+                    setTimeout(function() {
+                        if (!subWeb.documentElement.offsetHeight) return;
+                        iframe.style.height = subWeb.documentElement.offsetHeight + "px";
+                    }, 500);
+                }
+            });
+            setInterval(function() {
+                try {
+                    if (!subWeb.documentElement.offsetHeight) return;
+                    iframe.style.height = subWeb.documentElement.offsetHeight + "px";
+                } catch (e) {};
+            }, 500);
+        }
+        /*function iframeChange(){
+			window.ifreamLoadCount++;
+			var urlSplit = document.getElementById("iframepage").contentWindow.location.href.split("/");
+			var url = urlSplit[urlSplit.length-1];
+			var locationUrl = window.location.href;
+			if(url.indexOf("liveClass")!=-1&&window.ifreamLoadCount==1){
+				return;
+			}
+			url =url.split(".html")[0];
+			location.href=getUrlBaseString(window.location.href)+"#"+url;
+		}
+		function getUrlBaseString(url) { //从url中获取参数的对象
+	        var splitUrl = url.split("#");
+	        var strUrl = splitUrl[0];
+	        return strUrl;
+	    }*/
+    </script>
+    <script src="../res/js/vendor/jquery-seajs.js"></script>
+    <script src="../res/js/vendor/seajs/seajs-wrap.js"></script>
+    <script src="../res/js/common/common.js"></script>
+
+    <script>
+        seajs.config({
+            base: '/res/js/',
+            alias: {
+                'main': 'src/teacherAdmin/main'
+            }
+        });
+        seajs.use('main')
+    </script>
+</body>
+
+
+<!-- Mirrored from www.shiguangkey.com/teacherAdmin/main.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Mar 2018 08:17:30 GMT -->
+</html>

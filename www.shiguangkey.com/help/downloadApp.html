@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.shiguangkey.com/help/downloadApp by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Mar 2018 08:17:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../res/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<title>潭州课堂- 在线教学平台|潭州课堂-互联网在线教育|app下载页</title>
+<link rel="stylesheet" href="../res/css/common/index9c7f.css?v=2.0.5" rel="stylesheet"> 
+<script type="text/javascript" src="../res/js/three/paging/src/jquery-1.11.29c7f.js?v=2.0.5" ></script>
+<script type="text/javascript" src="../res/js/common/pc9c7f.js?v=2.0.5" ></script>
+</head>
+	<body>
+		<div class="head">
+		<div class="w1200">
+			<div class="logo">
+			    <a  href="../index.html" target="_blank">
+				<img src="../res/images/logo.png">
+				</a>
+			</div>
+			<div class="head-ul">
+				<a href="../index.html">返回首页</a>
+				<a href="downloadPc.html">PC客户端</a>
+				<a href="downloadApp.html">APP手机端</a>
+			</div>
+		</div>
+	</div>
+		<section class="section-wrap">
+			<div class="section section-1">
+				<div class="title active" style="bottom: 140px;">
+					<img src="../res/images/banner1.png">
+					<div class="fix-xz">
+						<div class="vx">
+							<img src="../res/images/downapp.png">
+							<span>手机扫描二维码下载</span>
+						</div>
+						<div class="fix-btn">
+							<a class="btn-ad" id="androidApp">
+								<img src="../res/images/ad.png"><span>Android版下载</span>
+							</a>
+							<a class="btn-ap" href="https://itunes.apple.com/us/app/潭州课堂/id1223322806?l=zh&amp;ls=1&amp;mt=8">
+								<img src="../res/images/ap.png"><span>iPhone版下载</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section-2">
+				<div class="title">
+					<img src="../res/images/banner2.png">
+					<div class="fix-xz">
+						<div class="vx">
+							<img src="../res/images/downapp.png">
+							<span>手机扫描二维码下载</span>
+						</div>
+						<div class="fix-btn">
+							<a class="btn-ad" id="androidApp">
+								<img src="../res/images/ad.png"><span>Android版下载</span>
+							</a>
+							<a class="btn-ap" href="https://itunes.apple.com/us/app/潭州课堂/id1223322806?l=zh&amp;ls=1&amp;mt=8">
+								<img src="../res/images/ap.png"><span>iPhone版下载</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section-3">
+				<div class="title">
+					<img src="../res/images/banner3.png">
+					<div class="fix-xz">
+						<div class="vx">
+							<img src="../res/images/downapp.png">
+							<span>手机扫描二维码下载</span>
+						</div>
+						<div class="fix-btn">
+							<a class="btn-ad" id="androidApp">
+								<img src="../res/images/ad.png"><span>Android版下载</span>
+							</a>
+							<a class="btn-ap" href="https://itunes.apple.com/us/app/潭州课堂/id1223322806?l=zh&amp;ls=1&amp;mt=8">
+								<img src="../res/images/ap.png"><span>iPhone版下载</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section-4">
+				<div class="title">
+					<img src="../res/images/banner4.png">
+					<div class="fix-xz">
+						<div class="vx">
+							<img src="../res/images/downapp.png">
+							<span>手机扫描二维码下载</span>
+						</div>
+						<div class="fix-btn">
+							<a class="btn-ad" id="androidApp">
+								<img src="../res/images/ad.png"><span>Android版下载</span>
+							</a>
+							<a class="btn-ap" href="https://itunes.apple.com/us/app/潭州课堂/id1223322806?l=zh&amp;ls=1&amp;mt=8">
+								<img src="../res/images/ap.png"><span>iPhone版下载</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<ul class="section-btn">
+			<li class="on"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+<script>
+$.ajax({
+	url:"/api/system/getNewVersion",
+	type:"POST",
+	dataType : "json",
+	data:{
+		"clientId":16
+	},
+	success : function(data) {
+		$("#androidApp").attr("href",data.data.version.downloadUrl);
+	}
+})
+</script>
+
+<!-- Mirrored from www.shiguangkey.com/help/downloadApp by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Mar 2018 08:17:36 GMT -->
+</html>

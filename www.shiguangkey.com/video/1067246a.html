@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from www.shiguangkey.com/video/1067?videoId=864&classId=707 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Mar 2018 08:41:34 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网页版潭州录播</title>
+    <link rel="shortcut icon" href="http://www-cdn-res.shiguangkey.com/res/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://www-cdn-res.shiguangkey.com/res/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/weblive.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <style>
+        .catalog>ul>li {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="web-main ms-controller" :controller="record">
+        <!--顶部公用导航栏-->
+        <wbr is="ms-nav" :widget="{getVm: @getVm, userInfo: @mine, courseId: @courseId}" />
+        <!--左侧快速通道-->
+        <div class="web-left" :on-mouseenter="@leftNavIn">
+            <span>
+                <i class="ico2"></i>快速导航</span>
+        </div>
+        <!--左侧快速通道内容-->
+        <div class="web-left-main" :on-mouseleave="@leftNavOut">
+            <div class="left-container">
+                <ul class="nav-list">
+                    <li :on-click="@leftTab = 1" :class="{active: @leftTab == 1}">我的收藏</li>
+                    <li :on-click="@leftTab = 2" :class="{active: @leftTab == 2}">类目</li>
+                </ul>
+                <div class="nav-container">
+                    <!--我的收藏部分-->
+                    <div class="my-collect tab" :visible="@leftTab == 1">
+                        <!--当没有收藏课程时-->
+                        <div class="no-collect" :if="@collectList.length === 0">
+                            <div class="ico2 no-pic"></div>
+                            <p>您还没有收藏课程哦,快去点击爱心吧</p>
+                        </div>
+                        <!--当有收藏课程时-->
+                        <ul class="collect-list">
+                            <li class="clearfix" :for="course in @collectList">
+                                <a :attr="{href: '/course/'+course.courseId}" target="_blank">
+                                    <div class="collect-left lf">
+                                        <img :attr="{src: course.cover}" alt="">
+                                    </div>
+                                    <div class="collect-right lf">
+                                        <h3 class="ell">{{course.title}}</h3>
+                                        <h4 class="ell">报名人数&nbsp;:&nbsp;{{course.applyNum}}</h4>
+                                        <p class="ell" :visible="course.price == 0">免费</p>
+                                        <p class="ell" :visible="course.price != 0">{{course.price | currency}}</p>
+                                        <i></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--类目部分-->
+                    <div class="catalogue tab" :visible="@leftTab == 2">
+                        <div class="sort" :for="(i, cate) in @cates">
+                            <p :class="'web'+i">
+                                <i class="ico"></i>{{cate.name}}</p>
+                            <div class="sort-list clearfix">
+                                <a :for="subCate in cate.subCates" :attr="{href: '/course/list?cateId='+subCate.cateId}" target="_blank">{{subCate.name}}</a>
+                                <a class="more" :attr="{href: '/course/list?cateId='+cate.cateId}" target="_blank">全部&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-btn">
+                    <a href="../help/downloadPc.html" target="_blank">
+                        <span class="bg"></span>
+                        <i>潭州客户端</i>
+                    </a>
+                    <a href="javascript:;" :on-mouseenter="@showAppCode = true" :on-mouseleave="@showAppCode = false">
+                        <span class="bg"></span>
+                        <i>潭州APP</i>
+                    </a>
+                    <div class="code" :visible="@showAppCode" :on-mouseenter="@showAppCode = true" :on-mouseleave="@showAppCode = false">
+                        <div class="ios lf ios1">
+                            <div class="ios-pic">
+                                <img src="../res/images/downapp.png" alt="">
+                            </div>
+                        </div>
+                        <span class="up"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="take-back">
+                <i class="ico2"></i>
+                收回侧栏
+            </div>
+        </div>
+        <div class="mainbody">
+            <div class="web-middle webrecord-middle">
+                <wbr is="ms-header" :widget="[@courseInfo, {chapterInfo: @chapterInfo}]" />
+                <div class="web-video">
+                    <iframe id="videoPlayer" frameborder="0" width="100%" height="100%" src="videorecorded.html" allowfullscreen="true" :if="@playing"></iframe>
+                </div>
+            </div>
+            <!--公告部分-->
+            <div class="web-right-all">
+                <div class="web-right-top">
+                    <p>
+                        <i class="ico lf"></i>老师公告
+                    </p>
+                    <div class="pulick" :html="(@announcement ? @announcement : '老师暂未发布公告') | wrap"></div>
+                </div>
+                <div class="web-right">
+                    <div class="live-chat">
+                        <!--nav-->
+                        <div class="liveChat-nav recorded-nav">
+                            <span>目录</span>
+                        </div>
+                        <!--按时间排序  看看高赞评论-->
+                        <!--目录-->
+                        <div class="catalog tab2">
+                            <ul class="clearfix">
+                                <li :for="(i, chapter) in @chapters" :hover="'active'" :on-click="@chapterCollapse(chapter)" :class="{active1: chapter.collapse}">
+                                    <p class="ell">第{{i+1}}章 {{chapter.title}}</p>
+                                    <i :visible="chapter.liveStatusDicFk == ''">未开始</i>
+                                    <em :visible="chapter.liveStatusDicFk != ''"></em>
+                                    <div class="playback-video clearfix" :visible="chapter.collapse">
+                                        <div class="clearfix" :for="video in chapter.vedios" :on-click="@changeVideo(video.videoId, $event)">
+                                            <p class="ell">
+                                                <em></em>【录播】{{video.videoName}} </p>
+                                            <!--<i>{{video.seconds | transSecond}}</i>-->
+                                        </div>
+                                        <div class="clearfix" :visible="chapter.vedios.length == 0">
+                                            <p>暂无回放课程</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/avalon/avalon2.2.6.js"></script>
+    <script src="lib/layer/layer.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/record.js"></script>
+</body>
+
+
+<!-- Mirrored from www.shiguangkey.com/video/1067?videoId=864&classId=707 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Mar 2018 08:41:34 GMT -->
+</html>
