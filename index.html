@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆表格</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        table{
+            width: 1200px;
+            height: 200px;
+            border-collapse: collapse;
+         }
+        td{
+            text-align: center;
+            width: 800px;
+            height: 80px;
+        }
+        h2{
+            text-indent: 500px;
+        }
+    </style>
+</head>
+<body>
+ <h2>表格</h2>
+<table border="1">
+
+    <tr>
+        <td>作者名</td>
+        <td>年龄</td>
+        <td>书籍</td>
+        <td>出版社</td>
+        <td>时间</td>
+    </tr>
+
+
+{#    {% for auther in authers %}#}
+    {% for book in books %}
+        <tr>
+        <td> {{ book.auther.name }}  </td>
+        <td> {{ book.auther.age }}   </td>
+        <td>  {{ book.name }}  </td>
+        <td>  {{ book.publish }}  </td>
+        <td>  {{ book.add_time }}  </td>
+        </tr>
+    {% endfor %}
+{#    {% endfor %}#}
+
+</table>
+<div style="height: 100px"></div>
+
+ {% if request.user.is_authenticated %}
+    <button type="button" class="btn btn-default" style="width: 500px">  <a href="{% url 'user_info' %}">个人中心</a></button>
+    <button type="button" class="btn btn-default" style="width: 500px">  <a href="">退出</a></button>
+    {% else %}
+    <button type="button" class="btn btn-default"  style="width: 280px">  <a href="{% url 'login' %}"> 登录</a></button>
+    <button type="button" class="btn btn-default"  style="width: 280px">  <a href="{% url 'register' %}"> 注册</a></button>
+
+ {% endif %}
+
+
+
+
+</body>
+</html>
