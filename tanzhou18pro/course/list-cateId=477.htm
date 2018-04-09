@@ -1,0 +1,1199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="https://www.shiguangkey.com//res/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<title>潭州课堂 - 全部课程</title>
+<link rel="stylesheet" href="../res/images/favicon.ico-v=2.0.5.png" tppabs="https://www.shiguangkey.com//res/images/favicon.ico?v=2.0.5" rel="shortcut icon" type="image/x-icon">
+<link rel="stylesheet" href="../res/--css-common-public.css,css-common-common.css,js-common-layer-skin-layer.css,js-three-paging-src-paging.css,css-user-login.css-v=2.0.5.css" tppabs="https://www.shiguangkey.com//res/??css/common/public.css,css/common/common.css,js/common/layer/skin/layer.css,js/three/paging/src/paging.css,css/user/login.css?v=2.0.5" rel="stylesheet"> 
+<script type="text/javascript" src="../res/js/fi000001.5" tppabs="https://www.shiguangkey.com//res/js/??three/paging/src/jquery-1.11.2.js,common/jquery.timers-1.1.2.js,common/jquery.qrcode.js,three/jquery.cookie.js,common/qrcode.js,common/utf.js,three/paging/src/query.js,three/paging/src/paging.js,common/all.js,src/common/track.js,common/common.js,common/userInfo.js,three/base64HalfMd5.js?v=2.0.5"></script>
+<!-- <script type="text/javascript" src="https://www.shiguangkey.com//res/js/three/paging/src/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/common/jquery.timers-1.1.2.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/common/jquery.qrcode.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/three/jquery.cookie.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/common/qrcode.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/common/utf.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/three/paging/src/query.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/three/paging/src/paging.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/common/all.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/src/common/track.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/common/common.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/common/userInfo.js?v=2.0.5"></script>
+<link href="https://www.shiguangkey.com//res/css/user/login.css" rel="stylesheet"> 
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/three/base64HalfMd5.js"></script>
+<script type="text/javascript" src="https://www.shiguangkey.com//res/js/common/loginDiv.js"></script> -->
+
+<script type="text/javascript" src="../res/js/src/common/track.js" tppabs="https://www.shiguangkey.com//res/js/src/common/track.js"></script>
+<script type="text/javascript" src="../res/js/common/layer/layer.js" tppabs="https://www.shiguangkey.com//res/js/common/layer/layer.js"> </script>
+<script>
+var ossHome="https://res.shiguangkey.com/";
+var token  = $.cookie("token");
+var localhref = location.href;
+var live_url="//www.shiguangkey.com/live/";
+//ga统计
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90486517-17', 'auto');
+  ga('send', 'pageview'); 
+  
+  //IE8 不支持console.log
+  window._console = window.console;  
+	window.console = (function (orgConsole) {  
+	    return {
+	        log: getConsoleFn("log"),  
+	        debug: getConsoleFn("debug"),  
+	        info: getConsoleFn("info"),  
+	        warn: getConsoleFn("warn"),  
+	        exception: getConsoleFn("exception"),  
+	        assert: getConsoleFn("assert"),  
+	        dir: getConsoleFn("dir"),  
+	        dirxml: getConsoleFn("dirxml"),  
+	        trace: getConsoleFn("trace"),  
+	        group: getConsoleFn("group"),  
+	        groupCollapsed: getConsoleFn("groupCollapsed"),  
+	        groupEnd: getConsoleFn("groupEnd"),  
+	        profile: getConsoleFn("profile"),  
+	        profileEnd: getConsoleFn("profileEnd"),  
+	        count: getConsoleFn("count"),  
+	        clear: getConsoleFn("clear"),  
+	        time: getConsoleFn("time"),  
+	        timeEnd: getConsoleFn("timeEnd"),  
+	        timeStamp: getConsoleFn("timeStamp"),  
+	        table: getConsoleFn("table"),  
+	        error: getConsoleFn("error"),  
+	        memory: getConsoleFn("memory"),  
+	        markTimeline: getConsoleFn("markTimeline"),  
+	        timeline: getConsoleFn("timeline"),  
+	        timelineEnd: getConsoleFn("timelineEnd")  
+	    };  
+	    function getConsoleFn(name) {  
+	        return function actionConsole() {  
+	            if (typeof (orgConsole) !== "object") return;  
+	            if (typeof (orgConsole[name]) !== "function") return;//�ж�ԭʼconsole�������Ƿ��д˷�������û����ֱ�ӷ���  
+	            return orgConsole[name].apply(orgConsole, Array.prototype.slice.call(arguments));//����ԭʼ����  
+	        };  
+	    }  
+	}(window._console));  
+	
+	
+	
+</script>
+</head>
+
+<body class="pagbg">
+	<!--header 开始-->
+<div class="header-bg">
+    <div class="w1195">
+       <h1 class="courlogo fl">
+       	<a href="../template/index.htm" tppabs="https://www.shiguangkey.com/" target="_blank"><img src="../res/images/pag-logo-1.png" tppabs="https://www.shiguangkey.com//res/images/pag-logo.png" alt="潭州课堂电商logo" /></a>
+       </h1>
+       <div class="fl cour-nav">
+       	<ul>
+       		<li><a href="../template/index.htm" tppabs="https://www.shiguangkey.com/" target="_blank">首页</a></li>
+            <li><a href="../template/list.htm" tppabs="https://www.shiguangkey.com/course/list" target="_blank">全部课程</a></li>
+            <li>
+               	<a href="../help/downloadApp" tppabs="https://www.shiguangkey.com/help/downloadApp" target="_blank">客户端</a>
+            </li>
+        </ul>
+       </div>
+       <div class="search fl w290">
+           <div class="seainput w252">
+           	 <i class="icon searchimg fr cour-search"   onclick="searchCourse();"></i>
+              <input type="text" placeholder="搜索课程" maxlength="15" id="searchKey"  class="inputtext w203" value="" />
+           </div>
+       </div>
+       <!--登录 - 开始-->
+       <div class="login fr courlogin">
+           <!--未登录展示效果 - 开始-->
+           <div class="logged none" id="login">
+           	   <!-- <a href="javascript:void(0);" target="_blank"  class="fr bidding" onclick="onJoinSchool()"> -->
+           	  <!--  <a href="/entering" target="_blank"  class="fr bidding">
+                   <i class="icon school"></i>申办学校 >
+               </a> -->
+               <div class="clobut fr">
+                   <a href="javascript:void(0);" onclick="tologin()" style="margin-right:25px;">登录</a>|
+                   <a href="javascript:;" onclick="toRegister()">注册</a>
+               </div>
+           </div>
+           
+           
+           <!--已登录展示效果 - 开始-->
+           <div class="thelogin none" id="thelogin">
+       	       <div class="personal fr">
+                   <a href="../i/index.htm" tppabs="https://www.shiguangkey.com/i/" target="_blank"  class="perimg"><img id="imgId" src="../res/images/default.png" tppabs="https://www.shiguangkey.com//res/images/default.png"></a>
+                   <div class="peohover">
+                       <i class="icon pericon"></i>
+                       <ul class="perul">
+                           <li><a href="../i/course.htm" tppabs="https://www.shiguangkey.com/i/course" target="_blank">课表</a></li>
+                           <li><a href="../i/order.htm" tppabs="https://www.shiguangkey.com/i/order"  target="_blank">我的订单</a></li>
+                           <li><a href="../i/profile.htm" tppabs="https://www.shiguangkey.com/i/profile"  target="_blank">个人信息</a></li>
+                           <li><a href="javascript:void(0);" class="pertopbor" id="logout">退出</a></li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="loginbut fr">
+                   <div class="fr teacher none" id="isTeacher">
+                       <a href="../teacherAdmin/main.html#liveClass" tppabs="https://www.shiguangkey.com/teacherAdmin/main.html#liveClass" style="color:#fff" target="_bank">教务管理</a>
+                   </div>
+               </div>
+               <!-- <a href="javascript:void(0);" target="_blank"  class="fr bidding " onclick="onJoinSchool()"> -->
+              <!--  <a href="/entering" target="_blank" id="entering" class="fr bidding none" >
+                   <i class="icon school"></i>申办学校 >
+               </a> -->
+           </div>
+           </div>
+       </div>
+    <div class="clear"></div>
+</div>
+
+<script>
+
+$(function(){
+	//学生信息
+	if(!isEmpty(token)){
+		$.ajax({
+			url:"/api/user/myinfo",
+			type:"POST",
+			dataType : "json",
+			success : function(data) {
+				if(data.data.userDetail!=null){
+					if(data.data.userDetail.headIcon != ''){
+						if(data.data.userDetail.headIcon.substr(0,4)=="http"){
+							$("#imgId").attr('src',data.data.userDetail.headIcon); 
+						}else{
+							$("#imgId").attr('src',ossHome+data.data.userDetail.headIcon);
+						}
+					}
+				}
+			}
+		 });
+	}
+	
+	$("#searchKey").keydown(function(e){
+		if(e.keyCode==13){
+			searchCourse();
+		}
+	});
+	
+	
+	
+	$("body").on("click","#logout",function(){
+		logout(function(){
+			location.href= location.href;
+		});
+	});
+});
+
+
+
+function isEmpty(val) {
+	val = $.trim(val);
+	if (val == null)
+		return true;
+	if (val == undefined || val == 'undefined')
+		return true;
+	if (val == "")
+		return true;
+	if (val.length == 0)
+		return true;
+	if (!/[^(^\s*)|(\s*$)]/.test(val))
+		return true;
+	return false;
+}
+function searchCourse(){
+    var searchKey = encodeURIComponent($("#searchKey").val().trim());
+	var test = window.location.pathname;
+	if(test == "/course/search"){
+		location.href = "https://www.shiguangkey.com/course/search?key="+searchKey+"&cateKey="+searchKey;
+	}else{
+		window.open("/course/search?key="+searchKey+"&cateKey="+searchKey);
+	}
+} 
+
+function tologin(){
+	toLogin(function(data){
+		location.reload();//刷新当前页面
+	});	
+}
+
+</script>	<!--conter - 开始-->
+    <div class="w1195">
+    	<!--一级导航全部课程 - 开始-->
+            <div class="allmod">
+                 <a href="javascript:void(0);" class="comran cateLink" data-id="0">全部课程</a>
+                 <i>></i>
+                 <a href="javascript:void(0);"  class="cateLink" data-id="259">语言留学</a> <i>></i>
+                 <a href="javascript:void(0);"  class="cateLink" data-id="352">日语</a> 
+            </div>
+        <div class="fl w890">
+        	<!--全部课程二级导航 - 开始-->
+            <div class="allranking bgfff allnaviga">
+	             <a href="javascript:void(0);" data-id="352" class="cateLink">全部</a>
+	                 	<a href="javascript:void(0);" data-id="371" class="cateLink">日语零基础</a>
+	                 	<a href="javascript:void(0);" data-id="477" class="comran cateLink">日语初级</a>
+                 <div class="clear"></div>  
+            </div>
+        	<!--综合排名 - 开始-->
+            <div class="allranking bgfff">
+            	<div class="fl w495">
+                    <a href="javascript:void(0);" class="comran">综合排序</a>
+                    <a href="javascript:void(0);" id="isLive"><span class="rankchec "></span>正在上课</a>
+                    <a href="javascript:void(0);" id="free"><span class="rankchec  "></span>免费公开课</a>
+                    <a href="javascript:void(0);" id="vip"><span class="rankchec  "></span>VIP课程</a>
+                    <div class="fr total">
+                    	<select class="total-text" id="sort" onchange="load()"> 
+							<option  selected="selected"  value="-1">按价格排序</option>
+							<option  value="desc">总价从高到低</option>
+							<option  value="asc">总价从低到高</option>
+						</select>
+                    </div>
+                 </div> 
+                <div class="clear"></div>  
+            </div>
+            <!--综合排名 - 结束-->            
+            <div class="bgfff mh500" >
+                <div class="courseall">
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1984  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1984'" tppabs="https://www.shiguangkey.com/course/1984" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201804/07/20180407151916738989679.png!mall_course_b.png" tppabs="https://res.shiguangkey.com/file/201804/07/20180407151916738989679.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1984_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1984">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1984  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1984'" tppabs="https://www.shiguangkey.com/course/1984" title="潭州日语A模块 124期" target="_blank" class="ictxt">
+                                         潭州日语A模块 124期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>0人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1979  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1979'" tppabs="https://www.shiguangkey.com/course/1979" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201804/04/20180404154942134214474.png!mall_course_b.png" tppabs="https://res.shiguangkey.com/file/201804/04/20180404154942134214474.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1979_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1979">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1979  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1979'" tppabs="https://www.shiguangkey.com/course/1979" title="潭州日语 A模块" target="_blank" class="ictxt">
+                                         潭州日语 A模块
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>0人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1977  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1977'" tppabs="https://www.shiguangkey.com/course/1977" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201804/03/20180403185451584615517.png!mall_course_b.png" tppabs="https://res.shiguangkey.com/file/201804/03/20180403185451584615517.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1977_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1977">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1977  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1977'" tppabs="https://www.shiguangkey.com/course/1977" title="日语A模块 122期" target="_blank" class="ictxt">
+                                         日语A模块 122期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>87人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1972  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1972'" tppabs="https://www.shiguangkey.com/course/1972" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201804/03/20180403152602640630081.png!mall_course_b.png" tppabs="https://res.shiguangkey.com/file/201804/03/20180403152602640630081.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1972_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1972">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1972  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1972'" tppabs="https://www.shiguangkey.com/course/1972" title="潭州日语A模块 123期" target="_blank" class="ictxt">
+                                         潭州日语A模块 123期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>89人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1963  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1963'" tppabs="https://www.shiguangkey.com/course/1963" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/31/20180331153205037194835.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/31/20180331153205037194835.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1963_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1963">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1963  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1963'" tppabs="https://www.shiguangkey.com/course/1963" title="潭州日语A模块下册 A2-12" target="_blank" class="ictxt">
+                                         潭州日语A模块下册 A2-12
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>65人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1960  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1960'" tppabs="https://www.shiguangkey.com/course/1960" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/30/20180330223352102385212.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/30/20180330223352102385212.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1960_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1960">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1960  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1960'" tppabs="https://www.shiguangkey.com/course/1960" title="日语A模块 121期" target="_blank" class="ictxt">
+                                         日语A模块 121期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>111人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1953  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1953'" tppabs="https://www.shiguangkey.com/course/1953" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/28/20180328221403595537585.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/28/20180328221403595537585.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1953_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1953">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1953  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1953'" tppabs="https://www.shiguangkey.com/course/1953" title="日语A模块 119期" target="_blank" class="ictxt">
+                                         日语A模块 119期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>90人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1949  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1949'" tppabs="https://www.shiguangkey.com/course/1949" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/28/20180328152438205362107.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/28/20180328152438205362107.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1949_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1949">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1949  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1949'" tppabs="https://www.shiguangkey.com/course/1949" title="潭州日语A模块 周末11" target="_blank" class="ictxt">
+                                         潭州日语A模块 周末11
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>161人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1948  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1948'" tppabs="https://www.shiguangkey.com/course/1948" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/28/20180328151546268948449.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/28/20180328151546268948449.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1948_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1948">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1948  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1948'" tppabs="https://www.shiguangkey.com/course/1948" title="日语A模块下册A2-11期" target="_blank" class="ictxt">
+                                         日语A模块下册A2-11期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>87人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1933  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1933'" tppabs="https://www.shiguangkey.com/course/1933" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/27/20180327150508363105246.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/27/20180327150508363105246.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1933_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1933">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1933  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1933'" tppabs="https://www.shiguangkey.com/course/1933" title="潭州日语A模块 120期" target="_blank" class="ictxt">
+                                         潭州日语A模块 120期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>103人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1914  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1914'" tppabs="https://www.shiguangkey.com/course/1914" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/23/20180323161345408768169.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/23/20180323161345408768169.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1914_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1914">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1914  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1914'" tppabs="https://www.shiguangkey.com/course/1914" title="潭州日语C模块 14班" target="_blank" class="ictxt">
+                                         潭州日语C模块 14班
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>111人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1913  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1913'" tppabs="https://www.shiguangkey.com/course/1913" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/23/20180323210951853109530.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/23/20180323210951853109530.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1913_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1913">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1913  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1913'" tppabs="https://www.shiguangkey.com/course/1913" title="潭州日语D模块 4班" target="_blank" class="ictxt">
+                                         潭州日语D模块 4班
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>95人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1897  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1897'" tppabs="https://www.shiguangkey.com/course/1897" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/20/20180320153936857760980.png!mall_course_b.png" tppabs="https://res.shiguangkey.com/file/201803/20/20180320153936857760980.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1897_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1897">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1897  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1897'" tppabs="https://www.shiguangkey.com/course/1897" title="日语A模块 116期" target="_blank" class="ictxt">
+                                         日语A模块 116期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>104人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1894  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1894'" tppabs="https://www.shiguangkey.com/course/1894" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/20/20180320174932056802287.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/20/20180320174932056802287.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1894_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1894">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1894  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1894'" tppabs="https://www.shiguangkey.com/course/1894" title="日语A模块 115期" target="_blank" class="ictxt">
+                                         日语A模块 115期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>108人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1887  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1887'" tppabs="https://www.shiguangkey.com/course/1887" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/20/20180320175113609801767.png!mall_course_b.png" tppabs="https://res.shiguangkey.com/file/201803/20/20180320175113609801767.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1887_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1887">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1887  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1887'" tppabs="https://www.shiguangkey.com/course/1887" title="日语A模块 108期" target="_blank" class="ictxt">
+                                         日语A模块 108期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>101人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1884  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1884'" tppabs="https://www.shiguangkey.com/course/1884" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/19/20180319150505398433877.png!mall_course_b.png" tppabs="https://res.shiguangkey.com/file/201803/19/20180319150505398433877.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1884_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1884">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1884  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1884'" tppabs="https://www.shiguangkey.com/course/1884" title="潭州日语A模块 118期" target="_blank" class="ictxt">
+                                         潭州日语A模块 118期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>109人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1866  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1866'" tppabs="https://www.shiguangkey.com/course/1866" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201802/08/20180208152643869130898.jpg!mall_course_b.png" tppabs="https://res.shiguangkey.com/file/201802/08/20180208152643869130898.jpg!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                    		<span class="publicimg"><img src="../res/images/public.png" tppabs="https://www.shiguangkey.com//res/images/public.png"></span>
+				                    </div>
+		                            <div class="none" id="1866_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1866">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1866  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1866'" tppabs="https://www.shiguangkey.com/course/1866" title="16课的复习课" target="_blank" class="ictxt">
+                                         16课的复习课
+		                                </a>
+		                            </div>
+										<span class="green">
+											免费
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>724人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1859  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1859'" tppabs="https://www.shiguangkey.com/course/1859" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/13/20180313205622669392445.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/13/20180313205622669392445.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1859_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1859">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1859  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1859'" tppabs="https://www.shiguangkey.com/course/1859" title="潭州日语A模块 117期" target="_blank" class="ictxt">
+                                         潭州日语A模块 117期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>117人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1857  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1857'" tppabs="https://www.shiguangkey.com/course/1857" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/13/20180313161742448975069.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/13/20180313161742448975069.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1857_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1857">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1857  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1857'" tppabs="https://www.shiguangkey.com/course/1857" title="日语A下10班" target="_blank" class="ictxt">
+                                         日语A下10班
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>87人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1853  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1853'" tppabs="https://www.shiguangkey.com/course/1853" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/13/20180313151158043698160.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/13/20180313151158043698160.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1853_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1853">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1853  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1853'" tppabs="https://www.shiguangkey.com/course/1853" title="潭州日语A模块 114期" target="_blank" class="ictxt">
+                                         潭州日语A模块 114期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>121人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1840  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1840'" tppabs="https://www.shiguangkey.com/course/1840" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/10/20180310135755713990976.png!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/10/20180310135755713990976.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1840_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1840">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1840  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1840'" tppabs="https://www.shiguangkey.com/course/1840" title="日语A下模块 A2-9" target="_blank" class="ictxt">
+                                         日语A下模块 A2-9
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>96人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1785  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1785'" tppabs="https://www.shiguangkey.com/course/1785" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/06/20180306211106561012460.jpg!mall_course_b" tppabs="https://res.shiguangkey.com/file/201803/06/20180306211106561012460.jpg!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1785_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1785">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1785  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1785'" tppabs="https://www.shiguangkey.com/course/1785" title="日语A模块 106期" target="_blank" class="ictxt">
+                                         日语A模块 106期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>88人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1784  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1784'" tppabs="https://www.shiguangkey.com/course/1784" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/29/20180329162930608269718.png!mall_course_b.png" tppabs="https://res.shiguangkey.com/file/201803/29/20180329162930608269718.png!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1784_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1784">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1784  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1784'" tppabs="https://www.shiguangkey.com/course/1784" title="日语A模块 113期" target="_blank" class="ictxt">
+                                         日语A模块 113期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>115人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+		                    <div class="course-item w192 h240 fl">
+		                        <div class="courimg">
+		                        	<!-- TODO添加详情页链接 -->
+		                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1782  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1782'" tppabs="https://www.shiguangkey.com/course/1782" target="_blank" class="cimg courtxt-img">
+		                                <img src="../../res.shiguangkey.com/file/201803/06/20180306143012209330143.jpg!mall_course_b.png" tppabs="https://res.shiguangkey.com/file/201803/06/20180306143012209330143.jpg!mall_course_b" />
+		                            </a>
+		                            <div class="cour-icon">
+				                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+				                    </div>
+		                            <div class="none" id="1782_cate_flase">
+					                	<a href="javascript:void(0);"  class="clive"  value="1782">上课中</a>
+									</div>
+		                        </div>
+		                        <div class="item-line">
+		                            <div class="itemcont">
+		                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1782  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ����������ʼ��ַ��Զ�����ӡ������������ʼ��ַ�����������, ���ļ������������ض��С�  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1782'" tppabs="https://www.shiguangkey.com/course/1782" title="日语A模块 103期" target="_blank" class="ictxt">
+                                         日语A模块 103期
+		                                </a>
+		                            </div>
+										<span class="coloryell">
+											7280元
+										</span>
+									<!-- href="/school/" target="_blank"  -->
+		                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>91人</a>
+		                        </div>
+		                        <div class="clear"></div>
+		                    </div>
+                </div>
+			 <div class="clear"></div>
+		 	 <div id="pageTool"></div>
+             <div class="clear"></div>
+            </div>
+            
+        </div>
+        <div class="fr">
+            <div class="bgfff w285">
+            	<div class="all-title">
+                	<span>热门推荐</span>
+                </div>
+	                <div class="course-item w253 bortop fl">
+	                        <div class="courimg">
+	                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1576  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1576'" tppabs="https://www.shiguangkey.com/course/1576" target="_blank" class="cimg">
+	                                <img src="../../res.shiguangkey.com/file/201803/28/20180328125038130545983.jpg!mall_course_c.png" tppabs="https://res.shiguangkey.com/file/201803/28/20180328125038130545983.jpg!mall_course_c" />
+	                            </a>
+	                            <div class="cour-icon">
+			                    		<span class="publicimg"><img src="../res/images/public.png" tppabs="https://www.shiguangkey.com//res/images/public.png"></span>
+			                    </div>
+			                    <!--<div class="ctxt">-->
+			                    	<!---->
+			                    <!--</div>-->
+		                            <!-- TODO添加直播链接 -->
+		                            <a href="javascript:void(0);" target="_blank" class="clive live_status_true">上课中</a>
+		                        <div class="none" id="1576_cateHot_flase">
+				                	<a href="javascript:void(0);"  class="clive"  value="1576">上课中</a>
+				                </div>
+	                        </div>
+	                        <div class="item-line">
+	                            <div class="itemcont">
+	                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1576  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1576'" tppabs="https://www.shiguangkey.com/course/1576" title="WEB前端0基础试听教室" target="_blank" class="ictxt">
+										WEB前端0基础试听教室
+	                                </a>
+	                            </div>
+									<span class="green">
+										免费
+									</span>
+								<!-- href="/school/" target="_blank"  -->
+	                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>18119人</a>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </div>
+	                <div class="course-item w253 bortop fl">
+	                        <div class="courimg">
+	                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1930  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1930'" tppabs="https://www.shiguangkey.com/course/1930" target="_blank" class="cimg">
+	                                <img src="../../res.shiguangkey.com/file/201803/26/20180326165950318287744-1.png!mall_course_c.png" tppabs="https://res.shiguangkey.com/file/201803/26/20180326165950318287744.png!mall_course_c" />
+	                            </a>
+	                            <div class="cour-icon">
+			                       		<span class="vipimg"><img src="../res/images/vip.png" tppabs="https://www.shiguangkey.com//res/images/vip.png"></span>
+			                    </div>
+			                    <!--<div class="ctxt">-->
+			                    	<!---->
+			                    <!--</div>-->
+		                        <div class="none" id="1930_cateHot_flase">
+				                	<a href="javascript:void(0);"  class="clive"  value="1930">上课中</a>
+				                </div>
+	                        </div>
+	                        <div class="item-line">
+	                            <div class="itemcont">
+	                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1930  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1930'" tppabs="https://www.shiguangkey.com/course/1930" title="2018年多省联考行测文科精英特惠课" target="_blank" class="ictxt">
+										2018年多省联考行测文科精英特惠课
+	                                </a>
+	                            </div>
+									<span class="coloryell">
+										9.9元
+									</span>
+								<!-- href="/school/" target="_blank"  -->
+	                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>4880人</a>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </div>
+	                <div class="course-item w253 bortop fl">
+	                        <div class="courimg">
+	                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1837  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1837'" tppabs="https://www.shiguangkey.com/course/1837" target="_blank" class="cimg">
+	                                <img src="../../res.shiguangkey.com/file/201803/28/20180328125203467220577.jpg!mall_course_c.png" tppabs="https://res.shiguangkey.com/file/201803/28/20180328125203467220577.jpg!mall_course_c" />
+	                            </a>
+	                            <div class="cour-icon">
+			                    		<span class="publicimg"><img src="../res/images/public.png" tppabs="https://www.shiguangkey.com//res/images/public.png"></span>
+			                    </div>
+			                    <!--<div class="ctxt">-->
+			                    	<!---->
+			                    <!--</div>-->
+		                        <div class="none" id="1837_cateHot_flase">
+				                	<a href="javascript:void(0);"  class="clive"  value="1837">上课中</a>
+				                </div>
+	                        </div>
+	                        <div class="item-line">
+	                            <div class="itemcont">
+	                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1837  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1837'" tppabs="https://www.shiguangkey.com/course/1837" title="Python从零基础到项目实战（项目篇）" target="_blank" class="ictxt">
+										Python从零基础到项目实战（项目篇）
+	                                </a>
+	                            </div>
+									<span class="green">
+										免费
+									</span>
+								<!-- href="/school/" target="_blank"  -->
+	                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>13045人</a>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </div>
+	                <div class="course-item w253 bortop fl">
+	                        <div class="courimg">
+	                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1711  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1711'" tppabs="https://www.shiguangkey.com/course/1711" target="_blank" class="cimg">
+	                                <img src="../../res.shiguangkey.com/file/201803/28/20180328123527509065759.jpg!mall_course_c.png" tppabs="https://res.shiguangkey.com/file/201803/28/20180328123527509065759.jpg!mall_course_c" />
+	                            </a>
+	                            <div class="cour-icon">
+			                    		<span class="publicimg"><img src="../res/images/public.png" tppabs="https://www.shiguangkey.com//res/images/public.png"></span>
+			                    </div>
+			                    <!--<div class="ctxt">-->
+			                    	<!---->
+			                    <!--</div>-->
+		                        <div class="none" id="1711_cateHot_flase">
+				                	<a href="javascript:void(0);"  class="clive"  value="1711">上课中</a>
+				                </div>
+	                        </div>
+	                        <div class="item-line">
+	                            <div class="itemcont">
+	                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/1711  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/1711'" tppabs="https://www.shiguangkey.com/course/1711" title="C语言从基础到项目实战" target="_blank" class="ictxt">
+										C语言从基础到项目实战
+	                                </a>
+	                            </div>
+									<span class="green">
+										免费
+									</span>
+								<!-- href="/school/" target="_blank"  -->
+	                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>5836人</a>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </div>
+	                <div class="course-item w253 bortop fl">
+	                        <div class="courimg">
+	                            <a href="javascript:if(confirm('https://www.shiguangkey.com/course/961  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/961'" tppabs="https://www.shiguangkey.com/course/961" target="_blank" class="cimg">
+	                                <img src="../../res.shiguangkey.com/file/201803/28/20180328125340897436717.jpg!mall_course_c.png" tppabs="https://res.shiguangkey.com/file/201803/28/20180328125340897436717.jpg!mall_course_c" />
+	                            </a>
+	                            <div class="cour-icon">
+			                    		<span class="publicimg"><img src="../res/images/public.png" tppabs="https://www.shiguangkey.com//res/images/public.png"></span>
+			                    </div>
+			                    <!--<div class="ctxt">-->
+			                    	<!---->
+			                    <!--</div>-->
+		                        <div class="none" id="961_cateHot_flase">
+				                	<a href="javascript:void(0);"  class="clive"  value="961">上课中</a>
+				                </div>
+	                        </div>
+	                        <div class="item-line">
+	                            <div class="itemcont">
+	                                <a href="javascript:if(confirm('https://www.shiguangkey.com/course/961  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/course/961'" tppabs="https://www.shiguangkey.com/course/961" title="潭州农业蔬菜种植技术公开课" target="_blank" class="ictxt">
+										潭州农业蔬菜种植技术公开课
+	                                </a>
+	                            </div>
+									<span class="green">
+										免费
+									</span>
+								<!-- href="/school/" target="_blank"  -->
+	                            <a class="item-txt w112 fr"><span style="color: #888;">报名人数：</span>8033人</a>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+	<div class="clear"></div>
+	<input type="hidden" id="count" value="94"/>
+	<div id="loginDiv" class="none"></div>
+    <!--footer - 开始-->
+	<!--footer - 开始-->
+<div class="w1195 footer">
+    	<div class="fl footleft">
+    		<div class="fl hotline">
+            	<div class="hotline-top">
+                	<span class="hotline-num">客服热线：<font>4008-096-959</font></span>
+                	<a href="javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=3520069320&site=qq&m  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://wpa.qq.com/msgrd?v=3&uin=3520069320&site=qq&m'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=3520069320&site=qq&m" target="_blank" class="onlinebut">在线咨询</a>
+                </div>
+            </div>
+            <div class="fr foot-er">
+            	<div class="fl official">
+                	<img src="../res/images/weixin.jpg" tppabs="https://www.shiguangkey.com//res/images/weixin.jpg">
+                	<p>官方微信</p>
+                </div>
+            	<div class="fl official">
+                	<img src="../res/images/weibo.png" tppabs="https://www.shiguangkey.com//res/images/weibo.png">
+                    <p>官方微博</p>
+                </div>      
+            </div>
+        </div>
+        <div class="fr footright">
+        	<div class="foot-icp fl">
+            	<p>Copyright © 2017 All Rights Reserved </p>
+            	<p class="icptxt">版权所有：湖南时光钥匙网络有限公司      备案号：湘ICP备17002945号-1</p>
+            	<div style="width:300px;margin:10px 0 0 168px;">
+		 			<a target="_blank" href="javascript:if(confirm('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43019002000435  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43019002000435'" tppabs="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43019002000435" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../res/images/beiantubiao.png" tppabs="https://www.shiguangkey.com//res/images/beiantubiao.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">湘公网安备 43019002000435号</p></a>
+		 		</div>	
+            </div>
+            <div class="tb-foot fl">
+	            <a  key ="59015a73efbfb03b5229e25c"  logo_size="124x47"  logo_type="common"  href="javascript:if(confirm('http://www.anquan.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.anquan.org/'" tppabs="http://www.anquan.org/" >
+	            <script src="../res/js/aq_auth.js" tppabs="https://static.anquan.org/static/outer/js/aq_auth.js"></script>
+	            </a>
+            </div>
+        	<div class="fr footlogo">
+            	<img src="../res/images/footlogo.jpg" tppabs="https://www.shiguangkey.com//res/images/footlogo.jpg" alt="底部logo" />
+            </div>
+        </div>
+</div>
+    <!--右边操作 - 开始-->
+<div class="rightside">
+    	<div class="rside">
+      		<div class="downapp">
+            	<a href="javascript:void(0);"  style="width:60px;height:60px;background:#e7e7e7;margin-top:1px;text-align:center;"> 
+                	<i class="icon dowicon"></i>
+                    <span class="commn-span">下载APP</span>
+                </a>
+                <div class="downer">
+                	<img src="../res/images/downapp.png" tppabs="https://www.shiguangkey.com//res/images/downapp.png" />
+                    <p>扫描下载APP</p>
+                </div>
+            </div>
+    		<div class="downapp">
+            	<a href="javascript:void(0);" class="sidecomm">
+                	<i class="icon feedback"></i>
+                    <span class="commn-span">问题反馈</span>
+                </a>
+            </div>
+            <div class="downapp">
+            	<a href="javascript:if(confirm('https://www.shiguangkey.com/help/student  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.shiguangkey.com/help/student'" tppabs="https://www.shiguangkey.com/help/student" target="_blank" class=" icon-help-hover">
+                	<i class="icon-help"></i>
+                    <span class="commn-span">帮助中心</span>
+                </a>
+            </div>
+            <div class="downapp back-top">
+            	<a href="javascript:void(0);" class="downclick">
+                	<i class="icon backtop"></i>
+                    <span class="commn-span">回到顶部</span>
+                </a>
+            </div>
+    	</div>
+</div>
+
+
+<!--问题反馈 弹窗-->    
+    <div class="problem none pshow">
+    	<div class="pro-title">
+        	<a href="javascript:void(0);" class="prolose closepup fr"><img src="../res/images/prolose.png" tppabs="https://www.shiguangkey.com//res/images/prolose.png" /></a>
+        	您好，我是潭州课堂的产品经理，欢迎您向我们反馈问题、提出宝贵建议
+        </div>
+        <div class="pro-txt">
+        	<div class="pro-tiinput">
+            	<input type="text" id="mailTitle" class="title-input fr" placeholder="请慨括您要反馈的问题" />
+            	<span class="w70">标题：</span>
+                <div class="clear"></div>
+            </div>
+            <div class="pro-tiinput">
+            	<textarea id="mailContent" class="title-input height187 fr" name="" cols="" rows="" placeholder="请慨括您要反馈的问题" ></textarea>
+            	<span class="w70">问题描述：</span>
+                <div class="clear"></div>
+            </div>
+            <div class="pro-but">
+            	<a href="javascript:void(0);" class="pro-deter" onclick="onMail()" id="onMail">确定</a>
+            	<a href="javascript:void(0);" class="pro-cancel closepup">取消</a>
+            </div>
+    	</div>
+    </div>
+    <div class="mask none closepup"></div><link href="../res/css/user/register.css" tppabs="https://www.shiguangkey.com/res/css/user/register.css" rel="stylesheet">
+<!-- <div id="bandPhone" class="none">
+	<div class="pond-phone-bg">
+	</div>
+	<div class="pond-phone">
+		<img src="https://www.shiguangkey.com//res/images/pond-phone-pic.png">
+		<div class="pond-phone-text">
+			<button class="pond-phone-btnNO">取消</button>
+			<button class="pond-phone-btnYes"><a href="/studentAdmin/main.html#contact" target="_blank">去绑定手机号码</a></button>
+		</div>
+	</div>
+</div> -->
+<link href="../res/css/user/SystemAnnouncement.css" tppabs="https://www.shiguangkey.com/res/css/user/SystemAnnouncement.css" rel="stylesheet">
+<div class="SystemAnnouncement none" id="message">
+	<div class="btn-x"><img src="../res/images/X-w.png" tppabs="https://www.shiguangkey.com//res/images/X-w.png"></div>
+	<h1 id="messageType"></h1>
+	<h2 id="messageTitle"></h2>
+	<h3 id="messageCreateTime"></h3>
+	<h4 id="messageContent"></h4>
+	<input id="messageId" type="hidden">
+	<button id="checkDetail" data-type="" onclick="onGetMessage()">查看详情</button>
+</div>
+<script type="text/javascript" >
+	$(".btn-x").click(function(){
+	    $(".SystemAnnouncement").hide();
+	});
+</script></body>
+
+<script src="../res/js/common/cate.js-v=2.0.5" tppabs="https://www.shiguangkey.com//res/js/common/cate.js?v=2.0.5"></script>
+</html>
